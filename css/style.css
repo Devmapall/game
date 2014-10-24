@@ -1,0 +1,110 @@
+#charWrapper {
+    float: left;
+    width: 100%;
+}
+
+.my {
+    height: 120px;
+    width: 300px;
+    border: 1px solid black;
+    float: left;
+}
+
+.myName {
+    border-bottom: 1px solid black;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+.myHealth {
+    width: 290px;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.myMind {
+    width: 290px;
+    margin-left: 5px;
+    height: 10px;
+    background-color: #03c;
+}
+
+.myPower {
+    width: 290px;
+    margin-left: 5px;
+    height: 10px;
+    background-color: #0c3;
+}
+
+.myBuffContainer {
+    //border: 1px solid black;
+    width: 288px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.myBuff {
+    border: 1px solid black;
+    height: 19px;
+    width: 19px;
+    background-color: #ff6600;
+    float: left;
+    margin-right: 1px;
+}
+
+.en {
+    height: 120px;
+    width: 300px;
+    border: 1px solid black;
+    float: right;
+}
+
+.enName {
+    border-bottom: 1px solid black;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+.enHealth {
+    width: 290px;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.enMind {
+    width: 290px;
+    margin-left: 5px;
+    height: 10px;
+    background-color: #03c;
+}
+
+.enPower {
+    width: 290px;
+    margin-left: 5px;
+    height: 10px;
+    background-color: #0c3;
+}
+
+.enBuffContainer {
+    //border: 1px solid black;
+    width: 288px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.enBuff {
+    border: 1px solid black;
+    height: 19px;
+    width: 19px;
+    background-color: #ff6600;
+    float: left;
+    margin-right: 1px;
+}
