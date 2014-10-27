@@ -108,3 +108,37 @@
     float: left;
     margin-right: 1px;
 }
+
+.skilltree {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+.skilltree td {
+    height: 40px;
+    width: 140px;
+    margin: 20px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.skillElement {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.skillElementHover {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+}
+
+.skillElementClicked {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+    border-color: yellow;
+}

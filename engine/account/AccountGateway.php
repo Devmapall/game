@@ -10,9 +10,9 @@ class AccountGateway extends Core\AbstractGateway {
     public function register($user,$pass,$email,$char) {    
         $sql = "INSERT INTO account (username, password, email) VALUES ('".$user."', '".hash("sha256",$pass)."', '".$email."');";
         $this->pdo->query($sql);
-        $h = $this->value();
-        $a = $this->value();
-        $m = $this->value();
+        $h = 1000;
+        $a = 1000;
+        $m = 1000;
         $id = $this->pdo->lastInsertId();
         $sql = "INSERT INTO `char` (name,maxhealth,maxpower,maxmind,health,power,mind,Account_ID) VALUES ('".$char."',".$h.",".$a.",".$m.",".$h.",".$a.",".$m.",".$id.");";
         $this->pdo->query($sql);

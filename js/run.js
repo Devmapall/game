@@ -1,4 +1,4 @@
-var url1 = "http://localhost/Genotype/";
+var url1 = "http://localhost/dbna/";
 var url2 = "http://euve1560.vserver.de/test/game/";
 
 function poller(id) {
@@ -31,4 +31,18 @@ $(function() {
             console.log("Buffed");
         });
     });
+    
+    $(".skillElement").hover(
+        function() {
+            $(this).addClass("skillElementHover");
+        }, function() {
+            $(this).removeClass("skillElementHover");
+        }
+    );
+    
+    $(".skillElement").click(
+            function() {
+                $(".skillElementClicked").toggleClass("skillElementClicked");
+                $(this).toggleClass("skillElementClicked");
+            });
 });
