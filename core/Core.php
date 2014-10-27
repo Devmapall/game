@@ -83,11 +83,11 @@ class Core {
     }
     
     protected function base_url() {
-        return "http://localhost/mykey/index.php/".$this->lang."/";
+        return "http://localhost/dbna/index.php/".$this->lang."/";
     }
     
     protected function ref_url() {
-        return "http://localhost/mykey/";
+        return "http://localhost/dbna/";
     }
     
     protected function redirect($location) {

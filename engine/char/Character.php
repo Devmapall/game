@@ -1,11 +1,12 @@
 <?php
 namespace Character;
 use Skill;
+use Stats;
 
 class Character {
     
     private $id;
-    private $gen;
+    private $name;
     private $maxHealth;
     private $maxPower;
     private $maxMind;
@@ -13,17 +14,9 @@ class Character {
     private $power;
     private $mind;
     private $buffList = array();
-    private $stat;
+    private $states = array();
     private $skillMods = array();
     private $skills;
-    
-    public function __construct($dna = null) {
-        if($dna) {
-            $gen = new Genotype();
-            $gen->setDNA($dna);
-            $this->gen = $gen;
-        }
-    }
 
     public function getBuffList() {
         return $this->buffList;
@@ -43,12 +36,28 @@ class Character {
         }
     }
     
+    public function setSkillMod($name,$value) {
+        $this->skillMods[$name] = $value;
+    }
+    
+    public function getSkillMod($name) {
+        return $this->skillMods[$name];
+    }
+    
+    public function changeStateTo($state) {
+        if($state instanceof \Stats\State) {
+            if(!in_array(get_class($state),$this->states)) {
+                $this->states[] = get_class($state);
+            }
+        }
+    }
+    
     public function getId() {
         return $this->id;
     }
-
-    public function getGen() {
-        return $this->gen;
+    
+    public function getName() {
+        return $this->name;
     }
 
     public function getHealth() {
@@ -66,9 +75,9 @@ class Character {
     public function setId($id) {
         $this->id = $id;
     }
-
-    public function setGen($gen) {
-        $this->gen = $gen;
+    
+    public function setName($name) {
+        $this->name = $name;
     }
 
     public function setHealth($health) {
