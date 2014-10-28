@@ -30,10 +30,10 @@ class User extends Controller {
             if(hash("sha256",$pass) === $db_pass) {
                 $uid = $this->gate->getUserIDByUsername($user);
                 $cid = $this->gate->getCharIDByUsername($user);
+                $this->session->create();
                 $this->session->set(0,$uid);
                 $this->session->set(1,$cid);
-                var_dump($this->session);
-                //$this->redirect("user/showChar");
+                $this->redirect("user/showChar");
             }
         }
     }
