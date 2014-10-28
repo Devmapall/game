@@ -32,7 +32,8 @@ class User extends Controller {
                 $cid = $this->gate->getCharIDByUsername($user);
                 $this->session->set(0,$uid);
                 $this->session->set(1,$cid);
-                $this->redirect("user/showChar");
+                var_dump($this->session);
+                //$this->redirect("user/showChar");
             }
         }
     }
