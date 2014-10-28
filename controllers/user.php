@@ -28,6 +28,7 @@ class User extends Controller {
         } else {
             $db_pass = $this->gate->getLoginData($user);
             if(hash("sha256",$pass) === $db_pass) {
+                echo "login erfolgreich<br>";
                 $uid = $this->gate->getUserIDByUsername($user);
                 $cid = $this->gate->getCharIDByUsername($user);
                 $this->session->set(0,$uid);
