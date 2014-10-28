@@ -4,7 +4,7 @@ session_start();
 
 class Session {
 
-    const dbname = "session";
+    const dbname = "game";
     const table = "sessions";
     const dbuser = "root";
     const dbpass = "Daswirstdunieerfahren";
