@@ -28,8 +28,9 @@ class User extends Controller {
         if($user === false || $pass === false) {
             $this->view("login");
         } else {
-            echo "Login proces<br>";
+            echo "<br>Login process<br>";
             $db_pass = $this->gate->getLoginData($user);
+            var_dump($db_pass);
             if(hash("sha256",$pass) === $db_pass) {
                 echo "login erfolgreich<br>";
                 $uid = $this->gate->getUserIDByUsername($user);
