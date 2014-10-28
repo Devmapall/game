@@ -39,12 +39,8 @@ class User extends Controller {
     
     public function showChar() {
         $cid = $this->session->get(1);
-        var_dump($cid);
         $fac = new Character\CharacterFactory();
         $char = $fac->createCharacter($cid);
-        echo "<pre>";
-        var_dump($char);
-        echo "</pre>";
         $data["char"] = $char;
         $this->view("char",$data);
     }
