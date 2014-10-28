@@ -2,7 +2,7 @@
 namespace Skill;
 use Character;
 
-class Poison implements Skill,Buff {
+class Poison implements Ability,Buff {
     
     private $rounds;
     

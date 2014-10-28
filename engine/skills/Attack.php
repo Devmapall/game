@@ -2,7 +2,7 @@
 namespace Skill;
 use Character;
 
-class Attack implements Skill {
+class Attack implements Ability {
     
     public function __construct($rounds=5) {
         $this->rounds = $rounds;

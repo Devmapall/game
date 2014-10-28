@@ -13,6 +13,7 @@ class User extends Controller {
         if($this->input->post("charname") === false) {
             $this->view("register_form");
         } else {
+            var_dump($this->input->post("charname"));
             if($this->validate()) {
                 $id = $this->gate->register($this->input->post("username"),$this->input->post("password"),$this->input->post("email"),$this->input->post("charname"));
             }

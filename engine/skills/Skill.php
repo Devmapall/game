@@ -2,5 +2,5 @@
 namespace Skill;
 
 interface Skill {
-    public function execute($caller,$target);
+    public function apply($caller);
 }

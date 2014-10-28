@@ -2,7 +2,7 @@
 namespace Skill;
 use Character;
 
-class Infusion implements Skill,Buff {
+class Infusion implements Ability,Buff {
     
     private $rounds;
     
