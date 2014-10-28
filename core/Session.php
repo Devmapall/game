@@ -45,6 +45,7 @@ class Session {
     public function update() {
         $id = $this->input->cookie("PHPSESSID");
         $sql = "UPDATE sessions SET last_activity = '" . time() . "', data = '" . serialize($this->data) . "' WHERE ID = '" . $id . "'";
+        echo $sql;
         $this->db->query($sql);
     }
 
