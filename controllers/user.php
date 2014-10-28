@@ -33,7 +33,7 @@ class User extends Controller {
                 $this->session->create();
                 $this->session->set(0,$uid);
                 $this->session->set(1,$cid);
-                $this->redirect("user/showChar");
+                //$this->redirect("user/showChar");
             }
         }
     }

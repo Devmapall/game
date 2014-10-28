@@ -39,6 +39,7 @@ class Session {
         $time = time();
         $sql = "INSERT INTO " . self::table . " (ID, agent, ip, last_activity, data)"
                 . " VALUES ('" . $id . "','" . $agent["browser_name_pattern"] . "', '" . $ip . "','" . $time . "','" . serialize($this->data) . "');";
+        echo $sql."<br>";
         $this->db->query($sql);
     }
 
