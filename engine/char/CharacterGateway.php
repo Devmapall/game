@@ -10,6 +10,7 @@ class CharacterGateway extends Core\AbstractGateway {
     
     public function getCharacter($id) {
         $sql = "SELECT * FROM `char` WHERE ID = ".$id;
+        echo $sql;
         $stmt = $this->pdo->query($sql);
         $row = $stmt->fetchObject();
         return $row;
