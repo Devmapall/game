@@ -32,13 +32,15 @@ class User extends Controller {
                 $cid = $this->gate->getCharIDByUsername($user);
                 $this->session->set(0,$uid);
                 $this->session->set(1,$cid);
-                $this->redirect("user/showChar");
+                var_dump($this->session);
+                //$this->redirect("user/showChar");
             }
         }
     }
     
     public function showChar() {
         $cid = $this->session->get(1);
+        var_dump($cid);
         $fac = new Character\CharacterFactory();
         $char = $fac->createCharacter($cid);
         echo "<pre>";
