@@ -22,24 +22,17 @@ class User extends Controller {
     public function login() {
         $user = $this->input->post("username");
         $pass = $this->input->post("password");
-        var_dump($user);
-        var_dump($pass);
         
         if($user === false || $pass === false) {
             $this->view("login");
         } else {
-            echo "<br>Login process<br>";
             $db_pass = $this->gate->getLoginData($user);
-            var_dump($db_pass);
-            var_dump(hash("sha256",$pass));
             if(hash("sha256",$pass) === $db_pass) {
-                echo "login erfolgreich<br>";
                 $uid = $this->gate->getUserIDByUsername($user);
                 $cid = $this->gate->getCharIDByUsername($user);
                 $this->session->set(0,$uid);
                 $this->session->set(1,$cid);
-                var_dump($this->session);
-                //$this->redirect("user/showChar");
+                $this->redirect("user/showChar");
             }
         }
     }
