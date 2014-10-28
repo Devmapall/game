@@ -22,11 +22,13 @@ class User extends Controller {
     public function login() {
         $user = $this->input->post("username");
         $pass = $this->input->post("password");
-        echo "Test";
+        var_dump($user);
+        var_dump($pass);
         
         if($user === false || $pass === false) {
             $this->view("login");
         } else {
+            echo "Login proces<br>";
             $db_pass = $this->gate->getLoginData($user);
             if(hash("sha256",$pass) === $db_pass) {
                 echo "login erfolgreich<br>";
