@@ -83,11 +83,11 @@ class Core {
     }
     
     protected function base_url() {
-        return "http://localhost/dbna/index.php/".$this->lang."/";
+        return "http://euve1560.vserver.de/test/game/index.php/".$this->lang."/";
     }
     
     protected function ref_url() {
-        return "http://localhost/dbna/";
+        return "http://euve1560.vserver.de/test/game/";
     }
     
     protected function redirect($location) {
