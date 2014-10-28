@@ -22,6 +22,7 @@ class User extends Controller {
     public function login() {
         $user = $this->input->post("username");
         $pass = $this->input->post("password");
+        echo "Test";
         
         if($user === false || $pass === false) {
             $this->view("login");
