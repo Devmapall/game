@@ -4,10 +4,10 @@ session_start();
 
 class Session {
 
-    const dbname = "mvc";
+    const dbname = "session";
     const table = "sessions";
     const dbuser = "root";
-    const dbpass = "";
+    const dbpass = "Daswirstdunieerfahren";
 
     private $db = null;
     private $input;
