@@ -34,7 +34,7 @@ class Session {
     public function create() {
 
         $id = $this->input->cookie("PHPSESSID");
-        $agent = get_browser(null, true);
+        $agent = "*"; //get_browser(null, true);
         $ip = $this->input->server("REMOTE_ADDR");
         $time = time();
         $sql = "INSERT INTO " . self::table . " (ID, agent, ip, last_activity, data)"
