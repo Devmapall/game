@@ -39,14 +39,12 @@ class Session {
         $time = time();
         $sql = "INSERT INTO " . self::table . " (ID, agent, ip, last_activity, data)"
                 . " VALUES ('" . $id . "','" . $agent["browser_name_pattern"] . "', '" . $ip . "','" . $time . "','" . serialize($this->data) . "');";
-        echo $sql."<br>";
         $this->db->query($sql);
     }
 
     public function update() {
         $id = $this->input->cookie("PHPSESSID");
         $sql = "UPDATE sessions SET last_activity = '" . time() . "', data = '" . serialize($this->data) . "' WHERE ID = '" . $id . "'";
-        echo $sql;
         $this->db->query($sql);
     }
 
