@@ -31,6 +31,7 @@ class User extends Controller {
             echo "<br>Login process<br>";
             $db_pass = $this->gate->getLoginData($user);
             var_dump($db_pass);
+            var_dump(hash("sha256",$pass));
             if(hash("sha256",$pass) === $db_pass) {
                 echo "login erfolgreich<br>";
                 $uid = $this->gate->getUserIDByUsername($user);
