@@ -1,7 +1,7 @@
 <?php
 namespace Skill;
 
-class SkillGateway extends Core\AbstractGateway {
+class SkillGateway extends \Core\AbstractGateway {
     
     public function __construct() {
         parent::__construct();
