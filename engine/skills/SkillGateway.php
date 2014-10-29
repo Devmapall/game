@@ -12,13 +12,13 @@ class SkillGateway extends \Core\AbstractGateway {
     }
     
     public function getTreeSkills($tree) {
-        $sql = "SELECT s.ID, s.x, s.y FROM skills as s "
+        $sql = "SELECT s.ID, s.name, s.x, s.y FROM skills as s "
                 . "INNER JOIN skilltree as st ON (s.tree = st.ID) "
                 . "WHERE st.tree = '".$tree."';";
         $stmt = $this->pdo->query($sql);
         $skills = array(array());
         foreach($stmt->fetchAll() as $row) {
-            $skills[$row["y"]][$row["x"]] = $row["ID"];
+            $skills[$row["y"]][$row["x"]] = $row["name"];
         }
         return $skills;
     }
