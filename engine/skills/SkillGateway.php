@@ -15,7 +15,6 @@ class SkillGateway extends \Core\AbstractGateway {
         $sql = "SELECT s.ID FROM skills as s "
                 . "INNER JOIN skilltree as st ON (s.tree = st.ID) "
                 . "WHERE st.tree = '".$tree."';";
-        echo $sql."<br>";
         $stmt = $this->pdo->query($sql);
         foreach($stmt->fetchAll() as $row) {
             var_dump($row);
