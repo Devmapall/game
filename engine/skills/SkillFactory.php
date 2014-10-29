@@ -11,5 +11,8 @@ class SkillFactory {
     
     public function getMeleeTree() {
         $skills = $this->gate->getTreeSkills("melee");
+        echo"<pre>";
+        var_dump($skills);
+        echo"</pre>";
     }
 }
