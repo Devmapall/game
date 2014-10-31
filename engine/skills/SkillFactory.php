@@ -14,7 +14,7 @@ class SkillFactory {
         $tree = new MeleeTree();
         echo"<pre>";
         foreach($skills as $y=>$skill) {
-            var_dump($skills);
+            var_dump($skill);
             foreach($skill as $x=>$s) {
                 var_dump($skill);
                 $skill = $this->getSkill($s["ID"]);
