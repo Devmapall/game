@@ -19,7 +19,7 @@ class SkillGateway extends \Core\AbstractGateway {
         $skills = array(array());
         echo"<pre>";
         foreach($stmt->fetchAll() as $row) {
-            var_dump($row);
+            var_dump($row["ID"]);
             $skills[$row["y"]][$row["x"]] = array($row["ID"]=>$row["name"]);
         }
         
