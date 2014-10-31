@@ -14,6 +14,7 @@ class SkillFactory {
         $tree = new MeleeTree();
         foreach($skills as $y=>$skill) {
             foreach($skill as $x=>$s) {
+                var_dump($s);
                 $skill = $this->getSkill($s["ID"]);
                 $tree->addSkill($x, $y, $skill);
             }
