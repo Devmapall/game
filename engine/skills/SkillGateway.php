@@ -18,7 +18,7 @@ class SkillGateway extends \Core\AbstractGateway {
         $stmt = $this->pdo->query($sql);
         $skills = array(array());
         foreach($stmt->fetchAll() as $row) {
-            $skills[$row["y"]][$row["x"]] = array($row["ID"]=>$row["name"]);
+            $skills[$row["y"]][$row["x"]] = array("ID"=>$row["ID"],"name"=>$row["name"]);
         }
         return $skills;
     }
