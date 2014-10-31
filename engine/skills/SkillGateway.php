@@ -17,13 +17,9 @@ class SkillGateway extends \Core\AbstractGateway {
                 . "WHERE st.tree = '".$tree."';";
         $stmt = $this->pdo->query($sql);
         $skills = array(array());
-        echo"<pre>";
         foreach($stmt->fetchAll() as $row) {
-            var_dump($row["ID"]);
             $skills[$row["y"]][$row["x"]] = array($row["ID"]=>$row["name"]);
         }
-        
-        echo "</pre>";
         return $skills;
     }
     
