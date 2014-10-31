@@ -1,5 +1,5 @@
 <?php
-namespace Skills;
+namespace Skill;
 
 interface SkillTree {
     public function addSkill($x,$y,$skill);
