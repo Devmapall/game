@@ -25,6 +25,7 @@ class SkillGateway extends \Core\AbstractGateway {
     
     public function getSkill($id) {
         $sql = "SELECT * FROM skills WHERE ID = ".$id.";";
+        echo $sql;
         $stmt = $this->pdo->query($sql);
         return $stmt->fetchObject();
     }
