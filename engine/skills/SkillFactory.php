@@ -24,8 +24,6 @@ class SkillFactory {
     
     public function getSkill($id) {
         $data = $this->gate->getSkill($id);
-        echo"<pre>";
-        var_dump($data);
-        echo"</pre>";
+        
     }
 }
