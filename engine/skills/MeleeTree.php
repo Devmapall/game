@@ -1,5 +1,5 @@
 <?php
-namespace Skills;
+namespace Skill;
 
 class MeleeTree implements SkillTree {
     
