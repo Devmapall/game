@@ -13,8 +13,8 @@ class SkillFactory {
         $skills = $this->gate->getTreeSkills("melee");
         $tree = new MeleeTree();
         echo"<pre>";
-        var_dump($skills);
         foreach($skills as $y=>$skill) {
+            var_dump($skills);
             foreach($skill as $x=>$s) {
                 var_dump($skill);
                 $skill = $this->getSkill($s["ID"]);
