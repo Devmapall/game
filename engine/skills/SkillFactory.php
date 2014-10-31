@@ -15,7 +15,6 @@ class SkillFactory {
         echo"<pre>";
         foreach($skills as $y=>$skill) {
             foreach($skill as $x=>$s) {
-                var_dump($s);
                 $skill = $this->getSkill($s["ID"]);
                 $tree->addSkill($x, $y, $skill);
             }
@@ -26,7 +25,7 @@ class SkillFactory {
     public function getSkill($id) {
         $data = $this->gate->getSkill($id);
         echo"<pre>";
-        //var_dump($data);
+        var_dump($data);
         echo"</pre>";
     }
 }
