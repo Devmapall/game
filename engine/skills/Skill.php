@@ -6,5 +6,5 @@ abstract class Skill {
     protected $xp_type = "";
     protected $skill_mods = array();
     protected $abilities = array();
-    public function apply($caller);
+    abstract public function apply($caller);
 }
