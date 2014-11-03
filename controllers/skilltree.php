@@ -11,6 +11,7 @@ class Skilltree extends Controller {
         echo "<pre>";
         var_dump($data["tree"]);
         echo "</pre>";
+        var_dump($data["tree"]->getSkill(0,0));
         $this->view("melee_tree",$data);
     }
     
