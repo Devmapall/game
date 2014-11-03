@@ -24,6 +24,7 @@ function poller(id) {
 
 $(function() {
     //poller(34);
+    var skill;
     
     $("#dialog").dialog({
         resizable: false,
@@ -31,6 +32,7 @@ $(function() {
         modal: true,
         buttons: {
             "Learn": function() {
+                skill.css("background-color","lime");
                 $(this).dialog("close");
             },
             Cancel: function() {
@@ -56,6 +58,7 @@ $(function() {
     
     $(".skillElement").click(
             function() {
+                skill = $(this);
                 $("#dialog").dialog("open");
                 $(".skillElementClicked").toggleClass("skillElementClicked");
                 $(this).toggleClass("skillElementClicked");
