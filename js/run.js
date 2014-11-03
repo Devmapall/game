@@ -32,8 +32,7 @@ $(function() {
         modal: true,
         buttons: {
             "Learn": function() {
-                skill.css("background-color","greenyellow");
-                skill.css("color","black");
+                skill.css("background-color","#006400");
                 $(this).dialog("close");
             },
             Cancel: function() {
