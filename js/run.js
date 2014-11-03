@@ -25,7 +25,19 @@ function poller(id) {
 $(function() {
     //poller(34);
     
-    $("#dialog").dialog({autoOpen: false});
+    $("#dialog").dialog({
+        resizable: false,
+        autoOpen: false,
+        modal: true,
+        buttons: {
+            "Learn": function() {
+                $(this).dialog("close");
+            },
+            Cancel: function() {
+                $(this).dialog("close");
+            }
+        }
+    });
     
     $(".skill").click(function() {
         var buffName = $(this).attr("name");
