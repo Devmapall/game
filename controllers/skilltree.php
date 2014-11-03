@@ -7,8 +7,7 @@ class Skilltree extends Controller {
     }
     
     public function melee() {
-        $fac = new Skill\SkillFactory();
-        $data["tree"] = $fac->getMeleeTree();
+        $data["tree"] = new Skill\Melee\MeleeTree();
         var_dump($data["tree"]);
         $this->view("melee_tree",$data);
     }
