@@ -23,7 +23,7 @@ function poller(id) {
 }
 
 $(function() {
-    poller(34);
+    //poller(34);
 
     $(".skill").click(function() {
         var buffName = $(this).attr("name");
