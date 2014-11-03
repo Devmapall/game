@@ -26,6 +26,6 @@ class MeleeTree implements Skill\Skilltree {
     }
     
     public function getSkill($x,$y) {
-        return $this->skill[$y][$x];
+        return $this->skills[$y][$x];
     }
 }
