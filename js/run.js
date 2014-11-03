@@ -58,10 +58,11 @@ $(function() {
     );
     
     $(".skillElement").click(
-            function() {
-                skill = $(this);
-                $("#dialog").dialog("open");
-                $(".skillElementClicked").toggleClass("skillElementClicked");
-                $(this).toggleClass("skillElementClicked");
-            });
+        function() {
+            skill = $(this);
+            $("#dialog").dialog("open");
+            $(".skillElementClicked").toggleClass("skillElementClicked");
+            $(this).toggleClass("skillElementClicked");
+        }
+    );
 });
