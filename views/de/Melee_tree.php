@@ -13,9 +13,9 @@
         <center>
                 <table class="skilltree">
                     <tr><td class="skillElement"><?=$tree->getSkill(0,0)->getName();?></td><td class="skillElement">Kick IV</td><td class="skillElement">Body IV</td><td class="skillElement">Defense IV</td></tr>
-                    <tr><td class="skillElement">Fist III</td><td class="skillElement">Kick III</td><td class="skillElement">Body III</td><td class="skillElement">Defense III</td></tr>
-                    <tr><td class="skillElement">Fist II</td><td class="skillElement">Kick II</td><td class="skillElement">Body II</td><td class="skillElement">Defense II</td></tr>
-                    <tr><td class="skillElement">Fist I</td><td class="skillElement">Kick I</td><td class="skillElement">Body I</td><td class="skillElement">Defense I</td></tr>
+                    <tr><td class="skillElement"><?=$tree->getSkill(0,1)->getName();?></td><td class="skillElement">Kick III</td><td class="skillElement">Body III</td><td class="skillElement">Defense III</td></tr>
+                    <tr><td class="skillElement"><?=$tree->getSkill(0,2)->getName();?></td><td class="skillElement">Kick II</td><td class="skillElement">Body II</td><td class="skillElement">Defense II</td></tr>
+                    <tr><td class="skillElement"><?=$tree->getSkill(0,3)->getName();?></td><td class="skillElement">Kick I</td><td class="skillElement">Body I</td><td class="skillElement">Defense I</td></tr>
                 </table>
             </form>
         </center>
