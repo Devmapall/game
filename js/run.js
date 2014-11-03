@@ -60,6 +60,7 @@ $(function() {
     $(".skillElement").click(
         function() {
             skill = $(this);
+            console.log(skill.text());
             $("#dialog").dialog("open");
             $(".skillElementClicked").toggleClass("skillElementClicked");
             $(this).toggleClass("skillElementClicked");
