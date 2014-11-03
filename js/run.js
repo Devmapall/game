@@ -1,8 +1,7 @@
-var url1 = "http://localhost/dbna/";
-var url2 = "http://euve1560.vserver.de/test/game/";
+var url = "http://euve1560.vserver.de/test/game/";
 
 function poller(id) {
-    $.post(url1+'ajax/getChar.php', function(data) {
+    $.post(url+'ajax/getChar.php', function(data) {
         var json = $.parseJSON(data);
         var nhw = Math.floor((290 * json.health) / 100);
         var npw = Math.floor((290 * json.power) / 100);
@@ -44,7 +43,7 @@ $(function() {
     
     $(".skill").click(function() {
         var buffName = $(this).attr("name");
-        $.post(url1+'ajax/buffer.php', {id:34,buff:buffName}, function(data) {
+        $.post(url+'ajax/buffer.php', {id:34,buff:buffName}, function(data) {
             console.log("Buffed");
         });
     });
@@ -60,7 +59,11 @@ $(function() {
     $(".skillElement").click(
         function() {
             skill = $(this);
-            console.log(skill.text());
+            
+            $.post(url+'ajax/getSkill.php', {skillName: skill.text()}, function(data) {
+                console.log("Learned");
+            });
+            
             $("#dialog").dialog("open");
             $(".skillElementClicked").toggleClass("skillElementClicked");
             $(this).toggleClass("skillElementClicked");
