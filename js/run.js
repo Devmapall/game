@@ -25,7 +25,7 @@ function poller(id) {
 $(function() {
     //poller(34);
     
-    $("#dialog").dialog({autoOpen: false});
+    var dialog = $("#dialog").dialog({autoOpen: false});
 
     $(".skill").click(function() {
         var buffName = $(this).attr("name");
@@ -44,7 +44,7 @@ $(function() {
     
     $(".skillElement").click(
             function() {
-                $("#dialog").open();
+                dialog.open();
                 $(".skillElementClicked").toggleClass("skillElementClicked");
                 $(this).toggleClass("skillElementClicked");
             });
