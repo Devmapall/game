@@ -27,6 +27,7 @@ $(function() {
     var skill;
     
     $("#dialog").dialog({
+        closeable: false,
         resizable: false,
         autoOpen: false,
         modal: true,
