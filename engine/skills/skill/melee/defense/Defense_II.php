@@ -6,4 +6,8 @@ class Defense_II {
     public function apply($caller) {
         
     }
+    
+    public function getName() {
+        return "Defense II";
+    }
 }

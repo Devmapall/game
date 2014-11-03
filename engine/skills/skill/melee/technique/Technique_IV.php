@@ -6,4 +6,8 @@ class Technique_IV extends Skill {
     public function apply($caller) {
         
     }
+    
+    public function getName() {
+        return "Technique IV";
+    }
 }

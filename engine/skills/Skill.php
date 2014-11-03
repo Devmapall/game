@@ -7,4 +7,5 @@ abstract class Skill {
     protected $skill_mods = array();
     protected $abilities = array();
     abstract public function apply($caller);
+    abstract public function getName();
 }

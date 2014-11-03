@@ -6,4 +6,8 @@ class Striking_IV extends Skill {
     public function apply($caller) {
         
     }
+    
+    public function getName() {
+        return "Striking IV";
+    }
 }

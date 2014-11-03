@@ -6,4 +6,8 @@ class Focus_IV extends Skill {
     public function apply($caller) {
         
     }
+    
+    public function getName() {
+        return "Focus IV";
+    }
 }
