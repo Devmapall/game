@@ -26,7 +26,8 @@ $(function() {
     //poller(34);
     
     var dialog = $("#dialog").dialog({autoOpen: false});
-
+    console.log(dialog);
+    
     $(".skill").click(function() {
         var buffName = $(this).attr("name");
         $.post(url1+'ajax/buffer.php', {id:34,buff:buffName}, function(data) {
