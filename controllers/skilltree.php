@@ -19,4 +19,3 @@ class Skilltree extends Controller {
         $this->view("medic_tree");
     }
 }
-
