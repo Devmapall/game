@@ -42,6 +42,7 @@ $(function() {
     
     $(".skillElement").click(
             function() {
+                $("#dialog").dialog();
                 $(".skillElementClicked").toggleClass("skillElementClicked");
                 $(this).toggleClass("skillElementClicked");
             });

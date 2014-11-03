@@ -22,6 +22,7 @@
                     <tr><td class="skillElement"><?=$tree->getSkill(0,0)->getName();?></td><td class="skillElement"><?=$tree->getSkill(1,0)->getName();?></td><td class="skillElement"><?=$tree->getSkill(2,0)->getName();?></td><td class="skillElement"><?=$tree->getSkill(3,0)->getName();?></td></tr>
                 </table>
         </center>
+        <div id="dialog"></div>
     </body>
 
 
