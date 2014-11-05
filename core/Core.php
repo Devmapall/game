@@ -18,8 +18,8 @@ class Core {
     protected $lang = "de";
 
     protected function __construct() {
-        $this->input = new MVC\Input();
-        $this->session = new MVC\Session($this->input);
+        $this->input = new Input();
+        $this->session = new Session($this->input);
         $clean = XSSFilter::filter($_SERVER["REQUEST_URI"]);
         $addition = explode("indexphp", $clean);
 
