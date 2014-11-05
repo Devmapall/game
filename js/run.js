@@ -62,8 +62,10 @@ $(function() {
             
             $.post(url+'skilltree/getSkill', {skillName: skill.text()}, function(data) {
                 var json = $.parseJSON(data);
+                $("#skillDetails").append("<table border='0'>")
                 $.each(json, function(index,value) {
-                    console.log(value);
+                    var attribute = $.parseJSON(value);
+                    console.log(attribute);
                 });
                 $("#skillDetails").html(data);
             });
