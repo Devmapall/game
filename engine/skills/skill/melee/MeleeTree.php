@@ -1,7 +1,7 @@
 <?php
 namespace Skill;
 
-class MeleeTree implements Skill\Skilltree {
+class MeleeTree implements Skilltree {
     
     private $skills = array();
     
