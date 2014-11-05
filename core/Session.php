@@ -25,6 +25,7 @@ class Session {
             if (is_object($stmt) && $stmt->rowCount() == 1) {
                 $result = $stmt->fetchObject();
                 $this->data = unserialize($result->data);
+                var_dump($this->data);
                 return true;
             } else {
                 return false;
