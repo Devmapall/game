@@ -64,8 +64,7 @@ $(function() {
                 var json = $.parseJSON(data);
                 $("#skillDetails").append("<table border='0'>")
                 $.each(json, function(index,value) {
-                    var attribute = $.parseJSON(value);
-                    console.log(attribute);
+                    console.log(value[0]);
                 });
                 $("#skillDetails").html(data);
             });
