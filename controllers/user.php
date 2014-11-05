@@ -59,4 +59,11 @@ class User extends Controller {
         }
         return $valid;
     }
+    
+    public function learnSkill() {
+        $name = "Skill\\".$this->input->post("skillName");
+        $skill = new $name();
+        $gate = new Character\CharacterGateway();
+        $gate->addCharacterSkill(2, $skill);
+    }
 }
