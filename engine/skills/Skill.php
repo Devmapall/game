@@ -29,8 +29,8 @@ abstract class Skill {
     public function isLearnable() {
         $input = new MVC\Input();
         $session = new MVC\Session($input);
-        $data = $session->load();
-        var_dump($data);
+        $session->load();
+        //var_dump($data);
     }
     
 }
