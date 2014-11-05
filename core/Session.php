@@ -16,7 +16,7 @@ class Session {
 
     public function __construct($input) {
         $this->input = $input;
-        $this->db = new PDO("mysql:dbname=" . self::dbname . ";host=localhost", self::dbuser, self::dbpass);
+        $this->db = new \PDO("mysql:dbname=" . self::dbname . ";host=localhost", self::dbuser, self::dbpass);
     }
 
     public function load() {
