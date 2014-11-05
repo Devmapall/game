@@ -62,6 +62,7 @@ class User extends Controller {
     
     public function learnSkill() {
         $name = "Skill\\".$this->input->post("skillName");
+        $name = str_replace(" ", "_", $name);
         $skill = new $name();
         $gate = new Character\CharacterGateway();
         $gate->addCharacterSkill(2, $skill);
