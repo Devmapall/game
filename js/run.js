@@ -69,7 +69,7 @@ $(function() {
                 $("#skillDetails").append("</table>");
             });
             
-            $("#dialog").dialog("open");
+            //$("#dialog").dialog("open");
             $(".skillElementClicked").toggleClass("skillElementClicked");
             $(this).toggleClass("skillElementClicked");
         }

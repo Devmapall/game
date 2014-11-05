@@ -143,3 +143,12 @@
     text-align: center;
     border-color: yellow;
 }
+
+.skillDetails {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 100px;
+    margin: 0;
+}
