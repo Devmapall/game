@@ -1,5 +1,6 @@
 <?php
 namespace Skill;
+use MVC;
 
 abstract class Skill {
     protected $needed_xp = 0;
@@ -26,7 +27,7 @@ abstract class Skill {
     }
     
     public function isLearnable() {
-        $session = new Session();
+        $session = new MVC\Session();
         $data = $session->load();
         var_dump($data);
     }
