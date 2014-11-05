@@ -38,6 +38,8 @@ class CharacterGateway extends Core\AbstractGateway {
     }
     
     public function addCharacterSkill($id,$skill) {
+        $name = get_class($skill);
+        $name = str_replace("Skill\\","",$name);
         $sql = "INSERT INTO char_skill (char_id, skill, learned) "
                 . "VALUES (".$id.", '".get_class($skill)."', NOW());";
         echo $sql;
