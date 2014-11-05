@@ -43,6 +43,7 @@
                         <tr><th colspan="2">Available Abilities</th></tr>
                     </table>
                 </div>
+                <div style="clear: both;"></div>
             </div>
         </div>
     </body>
