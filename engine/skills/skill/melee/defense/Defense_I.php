@@ -11,6 +11,6 @@ class Defense_I extends Skill {
         $this->skill_mods[] = new SkillMod("def_knockdown",10);
         $this->needed_xp = 1000;
         $this->xp_type = "combat";
-        $this->name = "Defens I";
+        $this->name = "Defense I";
     }      
 }
