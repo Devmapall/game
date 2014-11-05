@@ -34,7 +34,7 @@ $(function() {
                 skill.css("background-color","#006400");
                 skill.css("color","yellow");
                 $.post(url+"user/learnSkill", { skillName: skill }, function(data) {
-                    consle.log("learned skill " + skill);
+                    console.log("learned skill " + skill);
                 });
                 $(this).dialog("close");
             },
