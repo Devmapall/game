@@ -21,4 +21,8 @@ abstract class Skill {
         return $return;
     }
     
+    public function getSkillMods() {
+        return $this->skill_mods;
+    }
+    
 }

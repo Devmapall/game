@@ -20,7 +20,8 @@ class Skilltree extends Controller {
     }
     
     public function getSkill() {
-        $name = $this->input->post("skillName");
-        echo json_encode($name);
+        $name = "Skill\\".$this->input->post("skillName");
+        $skill = new $name;
+        echo json_encode($skill->getSkillMods());
     }
 }
