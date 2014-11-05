@@ -192,13 +192,13 @@
 
 .skillName {
     float: left;
-    margin-left: 15px;
-    margin-top: 40px;
+    margin-left: 40px;
+    margin-top: 5px;
 }
 
 .xpbar {
-    margin-left: 140px;
     width: 5px;
     height: 50px;
     background-color: black;
+    float: right;
 }
