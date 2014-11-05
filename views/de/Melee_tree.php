@@ -31,9 +31,18 @@
                             <col width="150">
                             <col width="50">
                         </colgroup>
+                        <tr><th colspan="2">Skill Modifications</th></tr>
                     </table>
                 </div>
-                <div id="abilities"></div>
+                <div id="abilities">
+                    <table border="0" id="abilityTable">
+                        <colgroup>
+                            <col width="50">
+                            <col width="150">
+                        </colgroup>
+                        <tr><th colspan="2">Available Abilities</th></tr>
+                    </table>
+                </div>
             </div>
         </div>
     </body>
