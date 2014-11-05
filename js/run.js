@@ -61,7 +61,7 @@ $(function() {
             skill = $(this);
             
             $.post(url+'skilltree/getSkill', {skillName: skill.text()}, function(data) {
-                $("#.skillmod").remove();
+                $(".skillmod").remove();
                 var json = $.parseJSON(data);
                 $.each(json, function(index,value) {
                     $("#skillModTable").append("<tr class='skillmod'><td>"+value[0]+"</td><td>"+value[1]+"</td></tr>");
