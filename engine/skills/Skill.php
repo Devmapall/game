@@ -30,6 +30,9 @@ abstract class Skill {
         $input = new MVC\Input();
         $session = new MVC\Session($input);
         $session->load();
+        $fac = new \Character\CharacterFactory();
+        $char = $fac->getCharacter($session->get(1));
+        
         //var_dump($data);
     }
     
