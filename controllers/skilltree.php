@@ -23,6 +23,7 @@ class Skilltree extends Controller {
         $name = "Skill\\".$this->input->post("skillName");
         $name = str_replace(" ", "_",$name);
         $skill = new $name;
+        $skill->isLearnable();
         $mods = $skill->getSkillMods();
         $array = array();
         foreach($mods as $mod) {

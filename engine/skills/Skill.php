@@ -1,6 +1,5 @@
 <?php
 namespace Skill;
-
 abstract class Skill {
     protected $needed_xp = 0;
     protected $xp_type = "";
@@ -23,6 +22,12 @@ abstract class Skill {
     
     public function getSkillMods() {
         return $this->skill_mods;
+    }
+    
+    public function isLearnable() {
+        $session = new Session();
+        $data = $session->load();
+        var_dump($data);
     }
     
 }
