@@ -16,10 +16,78 @@
         <br>
         <center>
                 <table class="skilltree">
-                    <tr><td class="skillElement"><span class="skillName"><?=$tree->getSkill(0,3)->getName();?></span><div class="xpbar"></td></td><td class="skillElement"><?=$tree->getSkill(1,3)->getName();?></td><td class="skillElement"><?=$tree->getSkill(2,3)->getName();?></td><td class="skillElement"><?=$tree->getSkill(3,3)->getName();?></td></tr>
-                    <tr><td class="skillElement"><?=$tree->getSkill(0,2)->getName();?></td><td class="skillElement"><?=$tree->getSkill(1,2)->getName();?></td><td class="skillElement"><?=$tree->getSkill(2,2)->getName();?></td><td class="skillElement"><?=$tree->getSkill(3,2)->getName();?></td></tr>
-                    <tr><td class="skillElement"><?=$tree->getSkill(0,1)->getName();?></td><td class="skillElement"><?=$tree->getSkill(1,1)->getName();?></td><td class="skillElement"><?=$tree->getSkill(2,1)->getName();?></td><td class="skillElement"><?=$tree->getSkill(3,1)->getName();?></td></tr>
-                    <tr><td class="skillElement"><?=$tree->getSkill(0,0)->getName();?></td><td class="skillElement"><?=$tree->getSkill(1,0)->getName();?></td><td class="skillElement"><?=$tree->getSkill(2,0)->getName();?></td><td class="skillElement"><?=$tree->getSkill(3,0)->getName();?></td></tr>
+                    <tr>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(0,3)->getName();?></span>
+                            <div class="xpbar"></td>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(1,3)->getName();?></span>
+                            <div class="xpbar"></td>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(2,3)->getName();?></span>
+                            <div class="xpbar"></td>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(3,3)->getName();?></span>
+                            <div class="xpbar"></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(0,2)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(1,2)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(2,2)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(3,2)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(0,1)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(1,1)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(2,1)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(3,1)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(0,0)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(1,0)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(2,0)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                        <td class="skillElement">
+                            <span class="skillName"><?=$tree->getSkill(3,0)->getName();?></span>
+                            <div class="xpbar"></div>
+                        </td>
+                    </tr>
                 </table>
         </center>
         <div id="dialog" title="Learn the skill?">Do you really want to learn the skill?</div>
