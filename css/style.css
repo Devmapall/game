@@ -155,7 +155,7 @@
 #skillWrapper {
     margin: auto;
     padding: 0;
-    width: 400px;
+    width: 401px;
     border: 1px solid white;
     float: left;
 }
@@ -163,13 +163,12 @@
 #skillMods {
     min-height: 150px;
     width: 200px;
-    border: 1px solid red;
+    border-right: 1px solid white;
     float: left;
 }
 
 #abilities {
     min-height: 150px;
     width: 200px;
-    border: 1px solid red;
     float: right;
 }
