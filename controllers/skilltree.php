@@ -19,7 +19,8 @@ class Skilltree extends Controller {
         $this->view("medic_tree");
     }
     
-    public function getSkill($name) {
+    public function getSkill() {
+        $name = $this->input->post("skillName");
         echo json_encode($name);
     }
 }
