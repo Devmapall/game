@@ -23,6 +23,9 @@
                 </table>
         </center>
         <div id="dialog" title="Learn the skill?">Do you really want to learn the skill?</div>
+        <div id="skillDetails">
+            
+        </div>
     </body>
 
 

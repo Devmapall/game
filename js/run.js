@@ -60,8 +60,8 @@ $(function() {
         function() {
             skill = $(this);
             
-            $.post(url+'ajax/getSkill.php', {skillName: skill.text()}, function(data) {
-                console.log("Learned");
+            $.post(url+'skilltree/getSkill.php', {skillName: skill.text()}, function(data) {
+                $("#skillDetails").html(data);
             });
             
             $("#dialog").dialog("open");
