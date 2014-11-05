@@ -1,5 +1,5 @@
 <?php
-Namespace MVC;
+namespace MVC;
 
 interface JSON {
     public function getJSONData();

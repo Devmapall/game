@@ -1,5 +1,5 @@
 <?php
-Namespace MVC;
+namespace MVC;
 
 require_once("Session.php");
 require_once("Input.php");

@@ -1,5 +1,5 @@
 <?php
-Namespace MVC;
+namespace MVC;
 
 class Input {
 
