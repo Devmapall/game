@@ -62,7 +62,7 @@ $(function() {
     $(".skillElement").click(
         function() {
             skill = $(this);
-            console.log($(skill + ".skillName"));
+            console.log($(skill).find(".skillName"));
             $.post(url+'skilltree/getSkill', {skillName: skill.text()}, function(data) {
                 $(".skillmod").remove();
                 var json = $.parseJSON(data);
