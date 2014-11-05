@@ -23,6 +23,7 @@ class Skilltree extends Controller {
         $name = "Skill\\".$this->input->post("skillName");
         $name = str_replace(" ", "_",$name);
         $skill = new $name;
+        var_dump($skill);
         echo json_encode($skill->getSkillMods());
     }
 }
