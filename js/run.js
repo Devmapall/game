@@ -60,7 +60,7 @@ $(function() {
         function() {
             skill = $(this);
             
-            $.post(url+'skilltree/getSkill.php', {skillName: skill.text()}, function(data) {
+            $.post(url+'skilltree/getSkill', {skillName: skill.text()}, function(data) {
                 $("#skillDetails").html(data);
             });
             
