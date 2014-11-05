@@ -32,7 +32,7 @@ class CharacterGateway extends Core\AbstractGateway {
         $stmt = $this->pdo->query($sql);
         $skills = array();
         foreach($stmt->fetchAll() as $row) {
-            $skills[] = $row["skill"];
+            $skills[] = "Skill\\".$row["skill"];
         }
         return $skills;
     }
@@ -42,7 +42,6 @@ class CharacterGateway extends Core\AbstractGateway {
         $name = str_replace("Skill\\","",$name);
         $sql = "INSERT INTO char_skill (char_id, skill, learned) "
                 . "VALUES (".$id.", '".$name."', NOW());";
-        echo $sql;
         $this->pdo->query($sql);
     }
 }
