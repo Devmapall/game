@@ -144,7 +144,7 @@
     border-color: yellow;
 }
 
-.skillDetails {
+#skillDetails {
     background-color: blue;
     color: white;
     padding: 10px;
