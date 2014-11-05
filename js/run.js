@@ -1,4 +1,4 @@
-var url = "http://euve1560.vserver.de/test/game/";
+var url = "http://euve1560.vserver.de/test/game/index.php/de/";
 
 function poller(id) {
     $.post(url+'ajax/getChar.php', function(data) {
