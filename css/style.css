@@ -159,6 +159,14 @@
     border: 1px solid white;
 }
 
+#skillWrapper div table th {
+    border-bottom: 1px solid white;
+}
+
+#skillWrapper div table td {
+    padding: 5px;
+}
+
 #skillMods {
     min-height: 150px;
     width: 200px;
