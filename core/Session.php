@@ -1,8 +1,7 @@
 <?php
+namespace MVC;
 
 session_start();
-
-namespace MVC;
 
 class Session {
 
