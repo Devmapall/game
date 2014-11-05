@@ -1,7 +1,7 @@
 <?php
 Namespace MVC;
 
-abstract class AbstractGateway extends MVC\Database {
+abstract class AbstractGateway extends Database {
     
     protected $table = "undefined";
     

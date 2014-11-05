@@ -1,7 +1,7 @@
 <?php
 Namespace MVC;
 
-class Router extends MVC\Core {
+class Router extends Core {
 
     private $controller = "welcome";
     private $method = "index";

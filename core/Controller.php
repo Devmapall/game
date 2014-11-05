@@ -1,7 +1,7 @@
 <?php
 Namespace MVC;
 
-class Controller extends MVC\Core {
+class Controller extends Core {
             
     protected function __construct() {
         parent::__construct();
