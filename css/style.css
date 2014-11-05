@@ -180,3 +180,11 @@
     width: 200px;
     float: right;
 }
+
+#buttonWrapper {
+    height: 20px;
+    width: 401px;
+    margin: auto;
+    padding: 0;
+    border: 1px solid red;
+}

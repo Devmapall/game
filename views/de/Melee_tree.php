@@ -44,6 +44,9 @@
                     </table>
                 </div>
                 <div style="clear: both;"></div>
+                <div id="buttonWrapper">
+                    <button id="learnSkill">learn Skill</button>
+                </div>
             </div>
         </div>
     </body>
