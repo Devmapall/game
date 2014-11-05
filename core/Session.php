@@ -2,6 +2,8 @@
 
 session_start();
 
+namespace MVC;
+
 class Session {
 
     const dbname = "game";
