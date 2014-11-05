@@ -11,7 +11,7 @@ class CharacterFactory {
         
     }
     
-    public function createCharacter($id) {
+    public function getCharacter($id) {
         $gate = new CharacterGateway();
         $bfac = new BuffFactory();
         $row = $gate->getCharacter($id);
@@ -26,9 +26,14 @@ class CharacterFactory {
         $char->setMind($row->mind);
         //$gen = $genfac->getGenotypeByChar($id);
         //$char->setGen($gen);
-        $mods = $gate->getCharacterSkillMods($id);
-        foreach($mods as $name=>$val) {
-            $char->setSkillMod($name, $val);
+        $states = $gate->getCharacterAttributes($id);
+        foreach($states as $name=>$val) {
+            $char->setState($name, $val);
+        }
+        
+        $skills = $gate->getCharacterSkills($id);
+        foreach($skills as $skill) {
+            $char->setSkill(new $skill());
         }
         
         $buffs = $bfac->createBuffsByChar($id);

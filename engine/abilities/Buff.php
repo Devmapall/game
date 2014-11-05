@@ -1,5 +1,5 @@
 <?php
-namespace Skill;
+namespace Ability;
 
 interface Buff {
     public function run($target);

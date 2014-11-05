@@ -14,9 +14,8 @@ class Character {
     private $power;
     private $mind;
     private $buffList = array();
-    private $states = array();
-    private $skillMods = array();
-    private $skills;
+    private $attributes = array();
+    private $skills = array();
 
     public function getBuffList() {
         return $this->buffList;
@@ -36,12 +35,35 @@ class Character {
         }
     }
     
-    public function setSkillMod($name,$value) {
-        $this->skillMods[$name] = $value;
+    public function learnSkill($skill) {
+        if(!in_array($skill, $this->skills)) {
+            $gate = new CharacterGateway();
+            $gate->addCharacterSkill($this->id, $skill);
+        }
     }
     
-    public function getSkillMod($name) {
-        return $this->skillMods[$name];
+    public function setSkill($skill) {
+        $this->skills[$skill->getName()] = $skill;
+    }
+    
+    public function getSkills() {
+        return $this->skills;
+    }
+    
+    public function getSkill($name) {
+        return $this->skills[$name];
+    }
+        
+    public function setAttribute($name,$value) {
+        $this->attributes[$name] = $value;
+    }
+    
+    public function getAttributes() {
+        return $this->attributes;
+    }
+    
+    public function getAttribute($name) {
+        return $this->attributes[$name];
     }
     
     public function changeStateTo($state) {

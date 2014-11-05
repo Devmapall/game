@@ -1,5 +1,5 @@
 <?php
-namespace Skill;
+namespace Ability;
 use Character;
 
 class Attack implements Ability {

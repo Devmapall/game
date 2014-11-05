@@ -1,5 +1,5 @@
 <?php
-namespace Skill;
+namespace Ability;
 use Character;
 
 class Poison implements Ability,Buff {

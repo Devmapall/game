@@ -1,5 +1,5 @@
 <?php
-namespace Skill;
+namespace Ability;
 
 interface Ability {
     public function execute($caller,$target);
