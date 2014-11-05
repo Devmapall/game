@@ -1,6 +1,6 @@
 <?php
 
-class User extends Controller {
+class User extends MVC\Controller {
     
     private $gate;
     
