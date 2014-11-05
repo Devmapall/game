@@ -1,6 +1,6 @@
 <?php
 
-class Skilltree extends Controller {
+class Skilltree extends MVC\Controller {
     
     public function __construct() {
         parent::__construct();
