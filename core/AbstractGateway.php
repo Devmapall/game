@@ -1,5 +1,6 @@
 <?php
 namespace MVC;
+require_once "Database.php";
 
 abstract class AbstractGateway extends \MVC\Database {
     
