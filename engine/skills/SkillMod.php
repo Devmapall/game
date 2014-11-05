@@ -1,4 +1,5 @@
 <?php
+namespace Skill;
 
 class SkillMod {
     //put your code here

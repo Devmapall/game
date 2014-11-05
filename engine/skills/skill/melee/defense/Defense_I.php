@@ -1,6 +1,7 @@
 <?php
 namespace Skill;
 use Ability;
+
 class Defense_I extends Skill {
     //put your code here
 
