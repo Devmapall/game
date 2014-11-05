@@ -3,11 +3,7 @@ namespace Skill;
 
 class Defense_III {
     //put your code here
-    public function apply($caller) {
-        
-    }
-    
-    public function getName() {
-        return "Defense III";
+    public function __construct() {
+        $this->name = "Defense III";
     }
 }
