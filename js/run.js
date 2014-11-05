@@ -73,4 +73,8 @@ $(function() {
             $(this).toggleClass("skillElementClicked");
         }
     );
+    
+    $("#learnSkill").click(function() {
+        $("#dialog").dialog("open");
+    });
 });
