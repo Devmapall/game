@@ -40,6 +40,6 @@ class CharacterGateway extends Core\AbstractGateway {
     public function addCharacterSkill($id,$skill) {
         $sql = "INSERT INTO char_skill (char_id, skill, learned) "
                 . "VALUES (".$id.", ".get_class($skill).", NOW());";
-        $this->dbo->query($sql);
+        $this->pdo->query($sql);
     }
 }
