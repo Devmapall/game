@@ -25,7 +25,14 @@
         <div id="dialog" title="Learn the skill?">Do you really want to learn the skill?</div>
         <div id="skillDetails">
             <div id="skillWrapper">
-                <div id="skillMods"></div>
+                <div id="skillMods">
+                    <table border="0" id="skillModTable">
+                        <colgroup>
+                            <col width="150">
+                            <col width="50">
+                        </colgroup>
+                    </table>
+                </div>
                 <div id="abilities"></div>
             </div>
         </div>
