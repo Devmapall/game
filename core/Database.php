@@ -1,6 +1,5 @@
 <?php
-
-require_once("Core.php");
+Namespace MVC;
 
 class Database extends Core {
 

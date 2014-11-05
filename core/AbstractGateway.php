@@ -1,6 +1,7 @@
 <?php
-require_once("Database.php");
-abstract class AbstractGateway extends Database {
+Namespace MVC;
+
+abstract class AbstractGateway extends MVC\Database {
     
     protected $table = "undefined";
     

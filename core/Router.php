@@ -1,10 +1,7 @@
 <?php
+Namespace MVC;
 
-require_once("Core.php");
-require_once("XSSFilter.php");
-require_once("Controller.php");
-
-class Router extends Core {
+class Router extends MVC\Core {
 
     private $controller = "welcome";
     private $method = "index";

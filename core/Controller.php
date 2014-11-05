@@ -1,7 +1,7 @@
 <?php
-require_once("Core.php");
+Namespace MVC;
 
-class Controller extends Core {
+class Controller extends MVC\Core {
             
     protected function __construct() {
         parent::__construct();
