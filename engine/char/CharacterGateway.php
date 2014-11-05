@@ -44,4 +44,16 @@ class CharacterGateway extends Core\AbstractGateway {
                 . "VALUES (".$id.", '".$name."', NOW());";
         $this->pdo->query($sql);
     }
+    
+    public function getCharacterExperience($id) {
+        $sql = "SELECT xp.name, cxp.value FROM char_experience as cxp "
+                . "INNER JOIN experience as xp ON (xp.ID = cxp.XP_ID) "
+                . "WHERE cxp.Char_ID = ".$id.";";
+        $stmt = $this->pdo->query($sql);
+        $xp = array();
+        foreach($stmt->fetchAll() as $row) {
+            $xp[$row["name"]] = $row["value"];
+        }
+        return $xp;
+    }
 }

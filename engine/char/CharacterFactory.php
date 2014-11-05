@@ -43,6 +43,11 @@ class CharacterFactory {
                 $char->addBuff($buff);
             }
         }
+        
+        $xp = $gate->getCharacterExperience($id);
+        foreach($xp as $name => $ex) {
+            $char->setXP($name,$ex);
+        }
         return $char;
     }
 }

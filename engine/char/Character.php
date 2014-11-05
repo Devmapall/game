@@ -16,6 +16,15 @@ class Character {
     private $buffList = array();
     private $attributes = array();
     private $skills = array();
+    private $xp = array();
+    
+    public function setXP($name,$value) {
+        $this->xp[$name] = $value;
+    }
+    
+    public function getXP($name) {
+        return $this->xp[$name];
+    }
 
     public function getBuffList() {
         return $this->buffList;
